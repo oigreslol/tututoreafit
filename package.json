@@ -1,0 +1,23 @@
+{
+  "name": "tututor",
+  "version": "1.0.0",
+  "description": "Conexion node and sql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sql",
+    "node"
+  ],
+  "author": "Nicolas M, Miguel Angel O., Juan Pablo Z., Sergio Andres M.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "mysql": "^2.14.1",
+    "sync-mysql": "^3.0.1"
+  },
+  "devDependencies": {}
+}

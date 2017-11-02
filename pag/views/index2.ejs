@@ -1,0 +1,371 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Tututor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Eco Power Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="../css/style2.css" type="text/css" rel="stylesheet" media="all">
+<link href="../css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
+<!-- //Custom Theme files -->
+<!-- web-fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+</head>
+<body>
+	<!-- banner -->
+	<div class="agileits-banner jarallax">
+		<div class="bnr-agileinfo">
+			<!-- navigation -->
+			<div class="top-nav w3-agiletop">
+				<div class="container">
+					<div class="navbar-header w3llogo">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="index2.ejs">Tututor<span>tutorias online</span> </a></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="w3menu navbar-right">
+							<ul class="nav navbar">
+								<li><a href="index2.ejs" class="active">Inicio</a></li>
+								<li><a href="nosotros.html">Nosotros</a></li>
+								<li><a href="gallery.html">Galeria</a></li>
+								<li><a href="contact.html">Contactanos</a></li>
+								<% if (login) { %>
+										<li><a href="perfil.ejs">Mi Perfil</a></li>
+								<% } %>
+
+								<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cerrar">Cerrar Sesion</button></li>
+							</ul>
+						</div>
+
+						<div class="clearfix"> </div>
+					</div>
+					<% if (perfil) { %>
+						<div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ 							<h3 class="mensajeI"><%= perfil %></h3>
+						</div>
+
+					<% } %>
+				</div>
+
+			</div>
+			<!-- //navigation -->
+			<!-- banner-text -->
+			<div class="banner-w3text">
+				<div class="container">
+
+					<ul id="vertical-ticker">
+						<li>Las mejores tutorias online, donde sea</li>
+						<li>No te quedes sin tu monitoria </li>
+						<li>Monitores: 3/12</li>
+						<li>Unete</li>
+					</ul>
+
+					<div class="w3ls-bnr-icons social-icon">
+						<a href="#" class="social-button twit"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-button fb"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-button ggl"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- //banner-text -->
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- welcome -->
+	<div class="welcome">
+		<div class="container">
+
+			<div class="welcome-agileinfo">
+				<div class="col-xs-4 col-sm-4 welcome-w3lsgrids">
+					<div class="w3lwelcome-img effect-ruby">
+						<img src="images/im1.jpg" alt=" " class="img-responsive"/>
+						<div class="agile-caption">
+							<h3>En cualquier lugar</h3>
+							<p>Pide la tuya</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 welcome-w3lsgrids">
+					<div class="w3lwelcome-img effect-ruby">
+						<img src="images/im2.jpg" alt=" " class="img-responsive"/>
+						<div class="agile-caption">
+							<h3>¿Dudas?</h3>
+							<p>Mira nuestro catalogo de temas</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 welcome-w3lsgrids">
+					<div class="w3lwelcome-img effect-ruby">
+						<img src="images/im3.jpg" alt=" " class="img-responsive"/>
+						<div class="agile-caption">
+							<h3>¿Quieres conocer mas?</h3>
+							<p>Empezar a concer</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div
+			</div>
+
+		</div>
+	</div>
+	<!-- //welcome -->
+	<!-- features -->
+	<div class="features">
+		<div class="container">
+			<h2 class="agileits-title">TUTUTOR</h2>
+			<p class="pagile-text">Tututor es una plataforma web interactiva de solucion de dudas online, en el cual podras encontrar soluciones unicas, personalizadas y de una manera sencilla.
+			En Tututor la meta mas importante a lograr es brindar una ayuda y solucion a sus usuarios en sus diferentes temas, teniendo en base las tecnologias bases aplicadas a Tututor</p>
+			<p></p>
+			<div class="features-row">
+				<div class="col-md-5 features-right">
+					<img src="images/tututor.png" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-7 features-left">
+					<div class="features-grid">
+						<div class="col-xs-3 features-grid-left">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-9 features-grid-right">
+							<h4>Siguenos en nuestras redes</h4>
+							<p>Si deseas conocer sobre el crecimiento que va teniendo Tututor, te invitamos a seguirnos en nuestras redes sociales, asi estaras actualizad@ de todas nuestras nuevas novedades.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="features-grid features-grid-mdl">
+						<div class="col-xs-3 features-grid-left">
+							<i class="fa fa-cogs" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-9 features-grid-right">
+							<h4>¿Tienes algun error con la pagina?</h4>
+							<p>Contactanos para poder darte una solucion adecuada a tu problema, solo tienes que undirle <a href="contact.html">aqui</a>.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="features-grid">
+						<div class="col-xs-3 features-grid-left">
+							<i class="fa fa-line-chart" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-9 features-grid-right">
+							<h4>¿Quieres conocer estadisticas?</h4>
+							<p>Este es el informe mensual sobre estadisticas en el portal web de tututor, <a href="#">INFORMES</a></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //features -->
+	<!-- Stats -->
+	<div class="stats services news-w3layouts">
+		<div class="container">
+			<div class="stats-agileinfo agileits-w3layouts">
+				<div class="col-sm-3 col-xs-6 stats-grid">
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='25' data-delay='3' data-increment="1">25</div>
+					<h6>Monitores</h6>
+				</div>
+				<div class="col-sm-3 col-xs-6 stats-grid">
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='200' data-delay='4' data-increment="1">200</div>
+					<h6>Estudiantes</h6>
+				</div>
+				<div class="col-sm-3 col-xs-6 stats-grid">
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='5000' data-delay='.5' data-increment="10">5000</div>
+					<h6>Preguntas</h6>
+				</div>
+				<div class="col-sm-3 col-xs-6 stats-grid">
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='110' data-delay='8' data-increment="1">50</div>
+					<h6>Llamadas</h6>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //Stats -->
+	<!-- services -->
+	<div class="services">
+		<div class="container">
+			<div class="col-md-4 services-w3ls-left">
+				<h3 class="agileits-title">Nuestros servicios</h3>
+				<p>Integer vitae ligula sed lectus consectetur pellentesque blandit nec orci. Nulla ultricies nunc et lorem semper,
+				quis accumsan dui aliquam aucibus sagittis placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+			</div>
+			<div class="col-md-8 services-w3ls-row agileits-w3layouts">
+				<div class="col-md-6 col-xs-4 services-grid agileits-w3layouts">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<h5>Acuerdos y licencia</h5>
+				</div>
+				<div class="col-md-6 col-xs-4 services-grid agileits-w3layouts">
+					<i class="fa fa-bar-chart" aria-hidden="true"></i>
+					<h5>Temas mas preguntados</h5>
+				</div>
+				<div class="col-md-6 col-xs-4 services-grid srvs-wthree-mdl agileits-w3layouts">
+					<i class="fa fa-recycle" aria-hidden="true"></i>
+					<h5>Software limpio</h5>
+				</div>
+				<div class="col-md-6 col-xs-4 services-grid srvs-wthree-mdl">
+					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+					<h5>Redes sociales</h5>
+				</div>
+				<div class="col-md-6 col-xs-4 services-grid agileits-w3layouts">
+					<i class="fa fa-comments-o" aria-hidden="true"></i>
+					<h5>Comunicacion excelente</h5>
+				</div>
+				<div class="col-md-6 col-xs-4 services-grid bottom-grids">
+					<i class="fa fa-cogs" aria-hidden="true"></i>
+					<h5>Matenimiento constante</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //services -->
+	<!-- footer start here -->
+	<div class="footer-agile">
+		<div class="container">
+			<div class="footer-top-agileinfo">
+				<div class="social-icon">
+					<a href="#" class="social-button twit"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="social-button fb"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="social-button ggl"><i class="fa fa-google-plus"></i></a>
+					<p>© Eafit 2017 TuTuTor Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+			</div>
+			<div class="footer-btm-agileinfo">
+				<div class="col-md-3 col-xs-3 footer-grid">
+					<h3>Informacion</h3>
+					<ul>
+						<li><a href="single.html"><i class="glyphicon glyphicon-menu-right"></i>Acerca de nosotros</a></li>
+						<li><a href="single.html"><i class="glyphicon glyphicon-menu-right"></i>Nuestro manual</a></li>
+						<li><a href="single.html"><i class="glyphicon glyphicon-menu-right"></i>Eafit</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-xs-3 footer-grid w3social">
+					<h3>Navegacion</h3>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="gallery.html">Galeria</a></li>
+						<li><a href="contact.html">Contactos</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div id="cerrar" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<form action="/cerrar" method="POST">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				<h4 class="modal-title">Cerrar Sesion</h4>
+			</div>
+			<div class="modal-body">
+				<h3>¿Esta seguro que desea cerrar sesion?</h3><br>
+
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-default">SI</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+			</div>
+			</form>
+
+
+		</div>
+
+	</div>
+	</div>
+
+	<!-- //footer end here -->
+	<!-- js -->
+	<script src="../js/jquery-2.2.3.min.js"></script>
+	<script src="../js/jarallax.js"></script>
+	<script src="../js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<!-- //js -->
+	<!-- text Ticker -->
+	<script type="text/javascript" src="../js/jquery.totemticker.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#vertical-ticker').totemticker({
+				row_height	:	'100px',
+				next		:	'#ticker-next',
+				previous	:	'#ticker-previous',
+				stop		:	'#stop',
+				start		:	'#start',
+				mousestop	:	true
+			});
+		});
+	</script>
+	<!-- //text Ticker -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="../js/move-top.js"></script>
+	<script type="text/javascript" src="../js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<!-- Progressive-Effects-Animation-JavaScript -->
+	<script type="text/javascript" src="../js/numscroller-1.0.js"></script>
+	<!-- //Progressive-Effects-Animation-JavaScript -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>
